@@ -12,11 +12,11 @@ num_letters = len(set(word))
 class Hangman:
 
     def __init__(self, word_list, num_lives=5):
-
+        #attributes
         self.word_list = [] # Initialize an empty list
         self.num_lives = num_lives
         self.num_letters = num_letters
-        self.list_of_guesses = []
+        self.list_of_guesses = [] # Initialize an empty list
         self.word = word
 
         self.word_guessed = ['_' for item in word]
